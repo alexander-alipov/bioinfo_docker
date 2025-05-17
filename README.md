@@ -2,6 +2,7 @@
 
 Docker-образ с биоинформатическими инструментами:
 - **samtools** (v1.17)
+- **htsfile**  (v1.17)
 - **bcftools** (v1.17)
 - **vcftools** (v0.1.16)
 
@@ -24,6 +25,8 @@ docker run -it bioinfo_docker /bin/bash
 ## Проверьте установку
 
 samtools --version
+
+htsfile --version
 
 bcftools --version
 
