@@ -24,6 +24,8 @@ docker run -it bioinfo_docker /bin/bash
 ## Проверьте установку
 
 samtools --version
+
 bcftools --version
+
 vcftools --version
 
