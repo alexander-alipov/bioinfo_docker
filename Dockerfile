@@ -1,3 +1,5 @@
+# Bioinfo_tools v1.0.0 - 18-05-2025
+
 # Базовый образ
 FROM ubuntu:22.04
 
