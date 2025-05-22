@@ -25,11 +25,10 @@ docker run -it bioinfo_docker /bin/bash
 
 ## Проверьте установку
 
-samtools --version
-
-htsfile --version
-
-bcftools --version
-
-vcftools --version
+samtools --version  
+htsfile --version  
+bcftools --version  
+vcftools --version  
+python3 --version  
+pip3 --version
 
