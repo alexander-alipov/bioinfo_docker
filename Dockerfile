@@ -86,3 +86,17 @@ ENV VCFTOOLS=$SOFT/vcftools-0.1.16/bin/vcftools
 
 # Очистка кэша
 RUN apt-get autoremove -y && apt-get clean
+
+# Установка Python и зависимостей
+RUN apt-get update && \
+    apt-get install -y python3 python3-pip && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+
+# Установка Python-библиотек
+RUN pip3 install pandas pysam && \
+    pip3 cache purge && \
+    rm -rf /root/.cache/pip
+
+# Копирование скрипта внутрь контейнера
+COPY FP_SNPs_script.py /usr/local/bin/FP_SNPs_script.py
